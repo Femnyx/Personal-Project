@@ -25,7 +25,6 @@ public class Destroy : MonoBehaviour
     {
         if (enemy_Renderer.isVisible)
         {
-            Debug.Log("Object is visible");
             cameraseen = true;
         }
         else if (enemy_Renderer.isVisible == false && cameraseen == true) 

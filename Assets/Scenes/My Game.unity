@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.19141203, g: 0.16552621, b: 0.12154614, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -133,7 +133,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5288875117216322788, guid: c74cabe18a345aa43a171ab5439474c3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 54.7
+      value: 13.6
       objectReference: {fileID: 0}
     - target: {fileID: 5288875117216322788, guid: c74cabe18a345aa43a171ab5439474c3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -198,9 +198,6 @@ PrefabInstance:
       addedObject: {fileID: 19952305}
     - targetCorrespondingSourceObject: {fileID: 6897309036327065730, guid: c74cabe18a345aa43a171ab5439474c3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 19952314}
-    - targetCorrespondingSourceObject: {fileID: 6897309036327065730, guid: c74cabe18a345aa43a171ab5439474c3, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 19952318}
   m_SourcePrefab: {fileID: 100100000, guid: c74cabe18a345aa43a171ab5439474c3, type: 3}
 --- !u!1 &19952304 stripped
@@ -248,27 +245,13 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 90
+  m_Constraints: 88
   m_CollisionDetection: 1
 --- !u!4 &19952310 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5288875117216322788, guid: c74cabe18a345aa43a171ab5439474c3, type: 3}
   m_PrefabInstance: {fileID: 19952303}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &19952314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 19952304}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f66a5b39c7f352745b0eebdda818ba65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemies: []
-  powerup: []
 --- !u!114 &19952318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,8 +269,10 @@ MonoBehaviour:
   - {fileID: 8829484932382745921, guid: 6b43b24ab95044740b1601354237e2f8, type: 3}
   - {fileID: 7189811281733227515, guid: fc0a9b30540d7254a9dc2bf4f7fc370b, type: 3}
   - {fileID: 350004678291444230, guid: e33862e8c07abea42a705a1bf978e37c, type: 3}
-  numberOfWalls: 4
-  wallLength: 10
+  - {fileID: 713352642032879768, guid: 665b99f5a0da8054583c82847481caad, type: 3}
+  - {fileID: 3440323816576338753, guid: 7b7f9a16bc4915247bcf3e391d4b612b, type: 3}
+  numberOfWalls: 6
+  wallLength: 12
   playerTriggerDistance: 10
 --- !u!1 &662396640
 GameObject:
@@ -407,13 +392,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: -0.022814497, y: -0.1042599, z: -0.49081364, w: 0.86470306}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: -8.152, y: -9.179, z: -58.504}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,7 +591,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.000001013279, y: -0.7071068, z: 0.000001013279, w: 0.7071068}
   m_LocalPosition: {x: 7.355986, y: 29.510635, z: 19.34963}
-  m_LocalScale: {x: 10, y: 1.0258, z: 2315.594}
+  m_LocalScale: {x: 10, y: 1.0258, z: 5914.027}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1053180654}
@@ -744,7 +729,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0.0000009834766, z: 0.7071068, w: 0.0000009834766}
   m_LocalPosition: {x: -29.898716, y: -36.889366, z: 19.34963}
-  m_LocalScale: {x: 10, y: 1, z: 3655.2764}
+  m_LocalScale: {x: 10, y: 1, z: 34701.848}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1053180654}

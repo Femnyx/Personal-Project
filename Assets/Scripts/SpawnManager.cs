@@ -12,7 +12,6 @@ public class SpawnManager : MonoBehaviour
     private float ySpawnBound = 16.0f;
     private float zPowerupRange = 5.0f;
     private float ySpawn = 1.0f;
-    public
 
 
     // Start is called before the first frame update

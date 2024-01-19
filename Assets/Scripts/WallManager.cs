@@ -23,7 +23,7 @@ public class WallManager : MonoBehaviour
         for (int i = 0; i < numberOfWalls; i++)
         {
             GameObject wallPrefab = obstaclePrefabs[Random.Range(0, obstaclePrefabs.Length)];
-            GameObject wall = Instantiate(wallPrefab, new Vector3(i * wallLength, 0, 0), wallPrefab.transform.rotation);
+            GameObject wall = Instantiate(wallPrefab, new Vector3(i * -wallLength, 0, 0), wallPrefab.transform.rotation);
             wallInstances.Add(wall);
         }
     }
@@ -33,15 +33,17 @@ public class WallManager : MonoBehaviour
     {
         //Destroys the oldest wall that was made
         numberOfWalls++;
-        GameObject oldWall = wallInstances[0];
-        wall.localPosition = new Vector3((numberOfWalls - 1) * wallLength, 0, 0);
+        //GameObject oldWall = wallInstances[0];
+        wall.localPosition = new Vector3((numberOfWalls - 1) * -wallLength, 0, 0);
+        Debug.Log(wall.name);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Obstacle"))
         {
-            ReplaceWall(other.transform);
+            ReplaceWall(other.transform.parent);
+
         }
     }
 }
