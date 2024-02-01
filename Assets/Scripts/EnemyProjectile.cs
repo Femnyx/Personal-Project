@@ -33,7 +33,7 @@ public class EnemyProjectile : MonoBehaviour
 
         bulletTime = timer;
 
-        GameObject bulletObj = Instantiate(enemyBullet, spawnPoint.transform.position, spawnPoint.transform.rotation) as GameObject;
+        GameObject bulletObj = Instantiate(enemyBullet, spawnPoint.transform.position, Quaternion.identity) as GameObject;
         Rigidbody bulletRig = bulletObj.GetComponent<Rigidbody>();
         bulletRig.AddForce(Vector3.forward * enemySpeed, ForceMode.Impulse);
         Destroy(bulletObj, 2);
