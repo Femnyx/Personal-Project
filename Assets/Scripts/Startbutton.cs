@@ -21,4 +21,9 @@ public class Startbutton : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void Settings()
+    {
+        SceneManager.LoadScene(3);
+    }
 }
