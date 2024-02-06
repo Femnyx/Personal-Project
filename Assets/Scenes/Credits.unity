@@ -720,7 +720,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 83, y: -128}
+  m_AnchoredPosition: {x: 83, y: -15}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1439867849
@@ -743,19 +743,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Level Prototype - Zander Mcvey
-
-    Taco Libre and Enemy Designs - Zander
-    Mcvey
-
-
-
-    Programmers - Zander Mcvey, Morgan Houston
-
-    Ideas - Zander Mcvey
-
-    Brick
-    Walls - Lord Enot (Unity Asset Stire)'
+  m_text: "\tLevel Prototype - Zander Mcvey\n\tTaco Libre and Enemy Designs - Zander
+    Mcvey\n\n\n\tProgrammers - Zander Mcvey, Morgan Houston\n\tIdeas - Zander Mcvey\n\tBrick
+    Walls - Lord Enot (Unity Asset Stire)\n\tBeta Testers - Riley Hutton, Morgan
+    Houston"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -818,7 +809,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -502.4912, y: -195.23523, z: -355.2644, w: -28.805176}
+  m_margin: {x: -502.4912, y: -195.23523, z: -834.17175, w: -132.51764}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
