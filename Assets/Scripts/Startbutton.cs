@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,13 +18,28 @@ public class Startbutton : MonoBehaviour
         
     }
 
-    public void StartNew()
+    public void StartNew() //starts the game
     {
         SceneManager.LoadScene(1);
     }
 
-    public void Settings()
+    public void Settings() //goes to Settings scene
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void Main() //goes to Main Menu scene
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void Credits() //goes to Credits scene
     {
         SceneManager.LoadScene(3);
+    }
+
+    public void Exit() //Quit Game
+    {
+        Application.Quit();
     }
 }

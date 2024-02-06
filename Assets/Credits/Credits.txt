@@ -1,6 +1,7 @@
-Level Prototype - Zander Mcvey
+Level Design - Zander Mcvey
 Taco Libre and Enemy Designs - Zander Mcvey
 
 Programmers - Zander Mcvey, Morgan Houston
 Ideas - Zander Mcvey
 Brick Walls - Lord Enot (Unity Asset Stire)
+Beta Testers - 

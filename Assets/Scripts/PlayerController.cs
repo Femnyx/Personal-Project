@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
         // While space is pressed and player is low enough, float up
         if (Input.GetKey(KeyCode.Space) && !gameOver)
         {
-            PlayerRb.AddForce(Vector3.up * floatForce);
+            Tacofly(); 
         }
 
         transform.Translate(Vector3.forward * Time.deltaTime * 5);
@@ -42,5 +42,10 @@ public class PlayerController : MonoBehaviour
     {
         //destroys the ball when it hits collision (Walls).
         Destroy(gameObject);
+    }
+
+    public void Tacofly()
+    {
+        PlayerRb.AddForce(Vector3.up * floatForce);
     }
 }
