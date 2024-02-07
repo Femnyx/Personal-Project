@@ -38,6 +38,11 @@ public class Startbutton : MonoBehaviour
         SceneManager.LoadScene(3);
     }
 
+    public void Death()
+    {
+        SceneManager.LoadScene(4);
+    }
+
     public void Exit() //Quit Game
     {
         Application.Quit();

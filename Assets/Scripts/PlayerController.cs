@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -41,7 +42,7 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         //destroys the ball when it hits collision (Walls).
-        Destroy(gameObject);
+        SceneManager.LoadScene(4);
     }
 
     public void Tacofly()
