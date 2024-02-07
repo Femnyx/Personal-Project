@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,6 +13,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody PlayerRb;
     public float floatForce;
     private float gravityModifier = 1.5f;
+    private float vertical;
+    private bool hasFly;
 
     // Start is called before the first frame update
     void Start()
@@ -48,5 +52,10 @@ public class PlayerController : MonoBehaviour
     public void Tacofly()
     {
         PlayerRb.AddForce(Vector3.up * floatForce);
+    }
+
+    public void OnMove(InputValue value)
+    {
+        vertical = value.Get<Vector2>().y;
     }
 }
