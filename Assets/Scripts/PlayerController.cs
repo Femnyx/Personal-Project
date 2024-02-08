@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         // While space is pressed and player is low enough, float up
-        if (Input.GetKey(KeyCode.Space) && !gameOver)
+        if (hasFly && !gameOver)
         {
             Tacofly(); 
         }
@@ -57,5 +57,10 @@ public class PlayerController : MonoBehaviour
     public void OnMove(InputValue value)
     {
         vertical = value.Get<Vector2>().y;
+    }
+
+    public void OnFly(InputValue value)
+    {
+        hasFly = value.isPressed;
     }
 }
