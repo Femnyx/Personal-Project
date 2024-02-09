@@ -5,6 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using static UnityEngine.Rendering.DebugUI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -54,13 +55,24 @@ public class PlayerController : MonoBehaviour
         PlayerRb.AddForce(Vector3.up * floatForce);
     }
 
+    public void MoveInput(Vector2 newMoveDir)
+    {
+        vertical = newMoveDir.y;
+    }
+    
+
+
     public void OnMove(InputValue value)
     {
-        vertical = value.Get<Vector2>().y;
+        MoveInput(value.Get<Vector2>());
     }
 
+    public void JumpInput(bool newJumpState)
+    {
+        hasFly = newJumpState;
+    }
     public void OnFly(InputValue value)
     {
-        hasFly = value.isPressed;
+        JumpInput(value.isPressed);
     }
 }
