@@ -13304,6 +13304,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 2758098943470201304, guid: 9f04c1a6da9982b4d8afd5678171b6ad, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4137211637880788762, guid: 9f04c1a6da9982b4d8afd5678171b6ad, type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2

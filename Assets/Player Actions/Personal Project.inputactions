@@ -34,12 +34,12 @@
                 },
                 {
                     "name": "Fly",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "002bfbae-14da-4e89-9114-57d82a2b8930",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "Press(behavior=2)",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -289,12 +289,78 @@
                     "name": "",
                     "id": "1c14449b-8d3b-4ada-a3b2-a2fb1a3729f3",
                     "path": "<Touchscreen>/primaryTouch/tap",
-                    "interactions": "",
+                    "interactions": "Tap",
                     "processors": "",
                     "groups": "Touch",
                     "action": "Fly",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "Touch0",
+                    "id": "cd3abdea-10ac-4e24-9d3f-1bc3e05b42bf",
+                    "path": "PointerInput",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fly",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "contact",
+                    "id": "e924c325-2a20-4a7a-94a4-a3378adb76e6",
+                    "path": "<Touchscreen>/touch0/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Touch",
+                    "action": "Fly",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "position",
+                    "id": "b038ee97-cd19-4599-b164-f686c8340345",
+                    "path": "<Touchscreen>/touch0/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Touch",
+                    "action": "Fly",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "radius",
+                    "id": "304eabcc-022d-459a-a3d8-0c332d350e7b",
+                    "path": "<Touchscreen>/touch0/radius",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Touch",
+                    "action": "Fly",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "pressure",
+                    "id": "a567b5ff-ecac-4f07-9675-6f602cba8420",
+                    "path": "<Touchscreen>/touch0/pressure",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Touch",
+                    "action": "Fly",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "inputId",
+                    "id": "52457878-b079-4287-bc27-a0d6a10555dd",
+                    "path": "<Touchscreen>/touch0/touchId",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Touch",
+                    "action": "Fly",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         },
