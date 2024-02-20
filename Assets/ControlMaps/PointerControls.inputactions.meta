@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1244f9165b970f944b94ccb5e3784e4b
+guid: 054376e9bc09d4944b76224aa37f30c2
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -11,4 +11,4 @@ ScriptedImporter:
   generateWrapperCode: 1
   wrapperCodePath: 
   wrapperClassName: 
-  wrapperCodeNamespace: 
+  wrapperCodeNamespace: InputSamples.Controls

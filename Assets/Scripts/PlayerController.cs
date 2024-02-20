@@ -5,10 +5,12 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
-using static UnityEngine.Rendering.DebugUI;
+using UnityEditor.Experimental.GraphView;
 
 public class PlayerController : MonoBehaviour
 {
+    public PlayerInput controls;
+
     public float speed;
     public bool gameOver;
     private Rigidbody PlayerRb;
