@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
 
     public void JumpInput(bool newJumpState)
     {
-        hasFly = newJumpState;
+        Tacofly();
     }
     public void OnFly(InputValue value)
     {

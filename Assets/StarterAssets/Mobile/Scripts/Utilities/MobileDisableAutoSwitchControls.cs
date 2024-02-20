@@ -16,18 +16,6 @@ public class MobileDisableAutoSwitchControls : MonoBehaviour
 
 #if (UNITY_IOS || UNITY_ANDROID)
 
-    [Header("Target")]
-    public PlayerInput playerInput;
-
-    void Start()
-    {
-        DisableAutoSwitchControls();
-    }
-
-    void DisableAutoSwitchControls()
-    {
-        playerInput.neverAutoSwitchControlSchemes = true;
-    }
 
 #else
 
