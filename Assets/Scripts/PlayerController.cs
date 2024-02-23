@@ -5,7 +5,6 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
-using UnityEditor.Experimental.GraphView;
 
 public class PlayerController : MonoBehaviour
 {
@@ -26,6 +25,10 @@ public class PlayerController : MonoBehaviour
         PlayerRb = GetComponent<Rigidbody>();
 
         PlayerRb.AddForce(Vector3.up * 5, ForceMode.Impulse);
+
+#if UNITY_IOS || UNITY_ANDRIOD
+        floatForce = 2;
+#endif
     }
 
     // Update is called once per frame
