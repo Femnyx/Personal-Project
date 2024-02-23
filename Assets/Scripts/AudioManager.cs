@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
+        // destroys the game object if it meets the requirements.
         if (instance != null && instance != this)
         {
             Destroy(this.gameObject);
@@ -30,6 +31,7 @@ public class AudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       // sets a true false statement for MasterVol and MusicVol in the Master Mixer in the unity project.
        masterMixer.SetFloat("MasterVol", PreferencesManager.GetMasterVolume());
        masterMixer.SetFloat("MusicVol", PreferencesManager.GetMusicVolume());
 
@@ -40,11 +42,14 @@ public class AudioManager : MonoBehaviour
             PreferencesManager.GetMusicVolume();
     }
 
+    // allows you to change the sound volume
     public void ChangeSoundVolume(float soundLevel)
     {
         masterMixer.SetFloat("MasterVol", soundLevel);
         PreferencesManager.SetMasterVolume(soundLevel);
     }
+
+    //allows you to change the music volume
     public void ChangeMusicVolume(float soundLevel)
     {
         masterMixer.SetFloat("MusicVol", soundLevel);
