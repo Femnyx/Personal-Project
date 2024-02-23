@@ -54,7 +54,8 @@ public class PlayerController : MonoBehaviour
 
     public void Tacofly()
     {
-        PlayerRb.AddForce(Vector3.up * floatForce);
+        PlayerRb.AddForce(Vector3.up * floatForce, ForceMode.Impulse);
+        
     }
 
     public void MoveInput(Vector2 newMoveDir)

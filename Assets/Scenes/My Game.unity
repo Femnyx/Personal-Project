@@ -754,6 +754,14 @@ PrefabInstance:
       propertyPath: controls
       value: 
       objectReference: {fileID: 1594772804}
+    - target: {fileID: 1061135631909029843, guid: 9aadada77b445584f8992088a59f9118, type: 3}
+      propertyPath: floatForce
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420668431450153651, guid: 9aadada77b445584f8992088a59f9118, type: 3}
+      propertyPath: m_Mass
+      value: 45
+      objectReference: {fileID: 0}
     - target: {fileID: 5138590585939823382, guid: 9aadada77b445584f8992088a59f9118, type: 3}
       propertyPath: m_DefaultActionMap
       value: Player
