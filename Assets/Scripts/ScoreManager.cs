@@ -33,11 +33,15 @@ public class ScoreManager : MonoBehaviour
     {
         score += 1;
         scoreText.text = "SCORE: " + score.ToString();
+        Debug.Log(highscore);
         if (highscore < score)
+
         {
             highscore = score;
             PlayerPrefs.SetInt("highscore", score);
-
+            highscoreText.text = "HIGHSCORE: " + highscore.ToString();
+            SavePlayer();
+            LoadPlayer();
         }
 
     }
