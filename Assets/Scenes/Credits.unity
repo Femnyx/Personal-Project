@@ -778,9 +778,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\tLevel Prototype - Zander Mcvey\n\tTaco Libre and Enemy Designs - Zander
-    Mcvey\n\n\n\tProgrammers - Zander Mcvey, Morgan Houston\n\tIdeas - Zander Mcvey\n\tBrick
-    Walls - Lord Enot (Unity Asset Store)\n\tBeta Testers - Riley Hutton, Morgan
-    Houston"
+    Mcvey\n\n\n\tProgrammers - Zander Mcvey, Morgan Houston\n\tIdeas - Zander Mcvey\n\tEnemy
+    - Dylan\n\tBrick Walls - Lord Enot (Unity Asset Store)\n\tBeta Testers - Riley
+    Hutton, Morgan Houston, Dylan Cook\n\tAndroid Tester - Josh Debord\n\n\tBackground
+    Music: Funky Thanksgiving by Admiral Bob (c) \r\n\tcopyright 2022 Licensed under
+    a Creative Commons Attribution (3.0) license.\r\n\thttps://dig.ccmixter.org/files/admiralbob77/65571
+    Ft: Wally Tungsten"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -807,8 +810,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

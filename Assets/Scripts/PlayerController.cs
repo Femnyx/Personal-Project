@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
         PlayerRb.AddForce(Vector3.up * 5, ForceMode.Impulse);
 
-#if UNITY_IOS || UNITY_ANDRIOD
+#if (UNITY_IOS || UNITY_ANDROID)
         floatForce = 2;
 #endif
     }
