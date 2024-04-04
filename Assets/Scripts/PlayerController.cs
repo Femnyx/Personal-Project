@@ -84,4 +84,10 @@ public class PlayerController : MonoBehaviour
     {
         JumpInput(value.isPressed);
     }
+    private void OnDrawGizmosSelected()
+    {
+       //sets the color for the Gizmos.DrawLine() command.
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(transform.position, transform.forward * 500f);
+    }
 }

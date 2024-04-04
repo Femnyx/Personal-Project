@@ -38,4 +38,9 @@ public class EnemyProjectile : MonoBehaviour
         bulletRig.AddForce(Vector3.forward * enemySpeed, ForceMode.Impulse);
         Destroy(bulletObj, 2);
     }
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(transform.position, transform.forward * 500f);
+    }
 }
