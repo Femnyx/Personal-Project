@@ -29,16 +29,13 @@ public class PlayerController : MonoBehaviour
 #if (UNITY_IOS || UNITY_ANDROID)
         floatForce = 2;
 #endif
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        // While space is pressed and player is low enough, float up
-        if (hasFly && !gameOver)
-        {
-            Tacofly(); 
-        }
+        
 
         transform.Translate(Vector3.forward * Time.deltaTime * 5);
     }
@@ -46,7 +43,12 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         //makes the player move forward with the set speed.
-        
+        // While space is pressed and player is low enough, float up
+        if (hasFly && !gameOver)
+        {
+            Tacofly();
+        }
+
     }
 
     private void OnCollisionEnter(Collision collision)
