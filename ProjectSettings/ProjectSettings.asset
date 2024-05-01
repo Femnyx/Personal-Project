@@ -912,16 +912,31 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: PersonalProject
+  metroPackageName: TacoLibre
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: GCTC
+  metroCertificateIssuer: GCTC
+  metroCertificateNotAfter: 8094e30aceb0db01
   metroApplicationDescription: Personal Project
-  wsaImages: {}
-  metroTileShortName: Personal Project
+  wsaImages:
+    65636: Assets/Store Logos/50 x 50.png
+    65736: Assets/Store Logos/100 x 100.png
+    131172: Assets/Store Logos/620 x 300.png
+    131272: Assets/Store Logos/1240 x 600.png
+    2031640: Assets/Store Logos/24 x 24.png
+    2031716: Assets/Store Logos/44 x 44.png
+    2031816: Assets/Store Logos/88 x 88.png
+    2097252: Assets/Store Logos/71 x 71.png
+    2097352: Assets/Store Logos/142 x 142.png
+    2162788: Assets/Store Logos/150 x 150.png
+    2162888: Assets/Store Logos/300 x 300.png
+    2228324: Assets/Store Logos/310 x 310.png
+    2228424: Assets/Store Logos/620 x 620.png
+    2293860: Assets/Store Logos/310 x 150.png
+    2293960: Assets/Store Logos/620 x 300.png
+  metroTileShortName: Taco Libre
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
